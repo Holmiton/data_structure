@@ -12,7 +12,7 @@ int* LinkListup(Sqlist* L1, Sqlist* L2, int* tempAdr) {
 	
 	int i = 0, j = L2->length - 1, k = 0;//index i in L1 from 0 to L1->length, j in L2 from L2->length to 0, k in tempAdr increase from 0
 	while (k < AllLength) {
-		tempAdr[k++] = (L1->data[i] < L2->data[j]) ? L1->data[i++] : L2->data[j--];//casuse unknown bug
+		tempAdr[k++] = (L1->data[i] < L2->data[j]) ? L1->data[i++] : L2->data[j--];//cause unknown bug
 
 		if (i >= L1->length) {
 			while(k < AllLength) {
